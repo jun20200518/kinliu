@@ -1,0 +1,198 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<?php
+
+set_include_path("/data/htdocs/zb/views/");
+
+?>
+
+<head>
+    <?php include("header-title.php"); ?>
+</head>
+
+<body>
+    <?php include("menu.php"); ?>
+    <div id="right-panel" class="right-panel">
+        <?php include("header.php"); ?>
+
+
+        
+
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12 table_scroll_bar">
+                        <div class="card">
+                            <div class="card-header">
+                                <span>
+                                    用户列表
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div id="bootstrap-data-table-export_wrapper"
+                                    class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="bootstrap-data-table-export"
+                                                class="table table-striped table-bordered dataTable no-footer"
+                                                role="grid" aria-describedby="bootstrap-data-table-export_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Position: activate to sort column ascending">
+                                                            编号</th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Office: activate to sort column ascending">交易帐号
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">真實姓名
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">微信头号
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">身份证号
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">身分证正面照
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">微信号
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            手机号码
+                                                        </th>
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">提交时间
+                                                        </th>
+
+                                                        <th class="sorting" tabindex="0"
+                                                            aria-controls="bootstrap-data-table-export" rowspan="1"
+                                                            colspan="1"
+                                                            aria-label="Salary: activate to sort column ascending">操作
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td data-th="编号">10000085</td>
+                                                        <td data-th="交易帐号">0000085</td>
+                                                        <td data-th="真实姓名">廖凡</td>
+                                                        <td data-th="微信头像"><a href="">aaa.jpg</a></td>
+                                                        <td data-th="身份证号">13947590</td>
+                                                        <td data-th="身分证正面照"><a href="">aaa.jpg</a></td>
+                                                        <td data-th="微信号">202dd02</td>
+                                                        <td data-th="手机号码">0930193923</td>
+                                                        <td data-th="提交时间">09月23日 10:29:48</td>
+                                                        <td data-th="操作">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">处理/拒绝</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">签约</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">交易流水</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td data-th="编号">10000085</td>
+                                                        <td data-th="交易帐号">0000085</td>
+                                                        <td data-th="真实姓名">廖凡</td>
+                                                        <td data-th="微信头像"><a href="">aaa.jpg</a></td>
+                                                        <td data-th="身份证号">13947590</td>
+                                                        <td data-th="身分证正面照"><a href="">aaa.jpg</a></td>
+                                                        <td data-th="微信号">202dd02</td>
+                                                        <td data-th="手机号码">0930193923</td>
+                                                        <td data-th="提交时间">09月23日 10:29:48</td>
+                                                        <td data-th="操作">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">处理/拒绝</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">签约</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm">交易流水</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row mt-3">
+                                        <div class="col-sm-12 col-md-5">
+                                            <div class="dataTables_info" id="bootstrap-data-table-export_info"
+                                                role="status" aria-live="polite">显示页面 1 到 5 总共 57 页s</div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <div class="dataTables_paginate paging_simple_numbers"
+                                                id="bootstrap-data-table-export_paginate">
+                                                <ul class="pagination">
+                                                    <li class="paginate_button page-item previous disabled"
+                                                        id="bootstrap-data-table-export_previous"><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="0"
+                                                            tabindex="0" class="page-link">上一页</a></li>
+                                                    <li class="paginate_button page-item active"><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="1"
+                                                            tabindex="0" class="page-link">1</a></li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="2"
+                                                            tabindex="0" class="page-link">2</a></li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="3"
+                                                            tabindex="0" class="page-link">3</a></li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="4"
+                                                            tabindex="0" class="page-link">4</a></li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="5"
+                                                            tabindex="0" class="page-link">5</a></li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="6"
+                                                            tabindex="0" class="page-link">6</a></li>
+                                                    <li class="paginate_button page-item next"
+                                                        id="bootstrap-data-table-export_next"><a href="#"
+                                                            aria-controls="bootstrap-data-table-export" data-dt-idx="7"
+                                                            tabindex="0" class="page-link">下一页</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div>
+    </div>
+    <?php include("footer-js.php"); ?>
+</body>
+
+</html>

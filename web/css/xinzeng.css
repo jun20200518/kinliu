@@ -1,0 +1,178 @@
+body .head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #202020;
+  border-bottom: 1px solid #272727;
+  color: #a6a6a6;
+  font-size: 12px;
+  height: 46px;
+}
+body .head .wrapper {
+  margin: 8px 15px;
+  line-height: 1;
+  color:#e4bf7f
+}
+
+body .head .wrappera {
+  margin: 8px 15px;
+  line-height: 1;
+  color:#e4bf7f;
+
+
+}
+
+body .head .wrapperb {
+  margin: 8px 15px;
+  line-height: 1;
+  color:#e4bf7f;
+  float: right;
+
+}
+
+
+
+
+
+
+
+
+
+body .head .wrapper i {
+  font-size: 12px;
+  font-style: normal;
+  color: #e4bf7f;
+  display: block;
+  margin-bottom: 5px;
+}
+body .head .wrappera i {
+  font-size: 12px;
+  font-style: normal;
+  color: #e4bf7f;
+  display: block;
+  margin-bottom: 5px;
+}
+body .head .wrapperb i {
+  font-size: 12px;
+  font-style: normal;
+  color: #e4bf7f;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+
+body .head .wrapper span {
+  font-weight: bold;
+}
+body .head .wrappera span {
+  font-weight: bold;
+}
+body .head .wrapperb span {
+  font-weight: bold;
+}
+
+
+
+
+
+body .head .left {
+  float: left;
+  width: 30%;
+  border-right: 1px solid #272727;
+  height: 46px;
+}
+
+
+
+body .head .right {
+  float: right;
+  text-align: right;
+  height: 46px;
+  width: 50%;
+}
+body .container {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 47px;
+  bottom: 46px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #121314
+}
+
+
+
+
+
+
+body .container.objectsDetail {
+  top: 0;
+  bottom: initial;
+  overflow-y: initial;
+}
+body .bottomLine {
+  position: fixed;
+  bottom: 46px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #272727;
+  background: #1f1f1f;
+  font-size: 12px;
+}
+body .bottomLine td {
+  height: 38px;
+  line-height: 38px;
+  padding: 0;
+}
+body .bottomLine .orderButton {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+body .bottomLine .orderButton.Up {
+  background: #D05D43;
+}
+body .bottomLine .orderButton.Down {
+  background: #28a847;
+}
+body .navigator {
+  border-top: 1px solid #272727;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: auto;
+  background: #1f1f1f;
+  z-index:999;
+
+}
+body .navigator a {
+  float: left;
+  color: #d2d2d2;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+  height: 46px;
+  line-height: 15px;
+}
+body .navigator a.active {
+  background: #2d2d2d;
+  color: #d9ad60;
+}
+body .navigator a:active {
+  background: #252525;
+  color: #eee;
+}
+body .container.session .buttons {
+  margin-top: 40px;
+}
+
+
+/*
+底部栏
+*/

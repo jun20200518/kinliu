@@ -1,0 +1,241 @@
+@import './variables';
+@import './utilities';
+
+@import './priceSummary';
+@import './tradePanel';
+@import './tradingModel';
+@import './finalConfirmModel';
+@import './userCenterMenu';
+@import './marketSelectMenu';
+@import './personalInfoForm';
+@import './withdrawRecord';
+@import './market';
+
+*,
+body,
+html {
+  box-sizing: border-box;
+  font-family: '微軟正黑體', 'Microsoft JhengHei', 'Segoe UI Semibold',
+    'Segoe UI', 'Lucida Grande', 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+html,
+body {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.wrapper {
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+//global
+a.btn {
+  text-align: center;
+  text-decoration: none;
+
+  &.active {
+    // color: #ffffff;
+    background-color: $active;
+  }
+}
+
+.blurMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 49;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+
+  &.show {
+    display: block;
+  }
+}
+
+.buyblurMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+
+  &.show {
+    display: block;
+  }
+}
+
+// header
+body {
+  background-color: $darkest;
+}
+
+nav {
+  background-color: $primary;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 10px;
+  height: 40px;
+
+  .marketSelectMenuButton,
+  .userCenterMenuButton {
+    filter: brightness(5);
+  }
+
+  img {
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .icon_wrapper {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    > img {
+      margin-right: 10px;
+      height: 20px;
+      filter: brightness(3);
+    }
+  }
+}
+
+main {
+  background-color: $dark;
+  margin: 5px;
+  padding: 5px;
+
+  .newsTicker {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    color: #ffffff;
+    background-color: $darkest;
+
+    > ul {
+      position: relative;
+      top: 0;
+      padding-left: 0;
+      display: flex;
+      list-style-type: none;
+      animation: moveOverLeft 10s linear infinite;
+
+      > li {
+        white-space: nowrap;
+        margin-right: 2em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .controlButtons {
+    padding: 5px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    color: $light;
+
+    a.btn {
+      padding: 0 5px;
+    }
+
+    .controlButtons_chartChangePanel {
+      display: flex;
+
+      a.btn {
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 1px 3px $darkest;
+      }
+
+      img {
+        height: 20px;
+      }
+    }
+
+    .controlButtons_periodChangePanel {
+      display: flex;
+      align-items: center;
+
+      a.btn {
+        color: $light;
+        font-size: $sm-font;
+        background-color: transparent;
+        border-color: $light;
+        border-radius: 5px;
+        margin-right: 5px;
+
+        > span {
+          font-size: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+input {
+  outline: none;
+  font-size: initial;
+}
+
+.transitionButtons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 48;
+  width: 100%;
+  padding: 5px 5px 0 5px;
+  background-color: black;
+  transition: all 0.5s;
+
+  a.btn {
+    > img {
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: $dark;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: $xl-font;
+    padding: 5px;
+  }
+
+  .transitionButtons_up {
+    background-color: $priceUp;
+  }
+
+  .transitionButtons_down {
+    background-color: $priceDown;
+  }
+
+  a.btn + a.btn {
+    margin-left: 5px;
+  }
+}
+
+#chartView {
+  position: relative;
+  z-index: 0;
+}

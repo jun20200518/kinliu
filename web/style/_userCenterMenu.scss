@@ -1,0 +1,295 @@
+.userCenterMenu {
+  position: fixed;
+  width: 80%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  transform: translateX(100%);
+  background: $darkest;
+  transition: all 0.5s;
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  .wrapper {
+    bottom: 45px;
+  }
+
+  > nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $primary;
+    padding: 10px;
+    width: 100%;
+
+    img {
+      height: 20px;
+      padding-left: 20px;
+      margin-left: -15px;
+    }
+
+    &::before {
+      content: ' ';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+      border-color: transparent white transparent transparent;
+    }
+  }
+
+  .userCenterMenu__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  #transaction_btn {
+    width: 100%;
+  }
+
+  .marketSelectMenu__header {
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .marketSelectMenu__buttons {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+  }
+
+  .menu_btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: #fff;
+    color: gray;
+    font-size: 0.75rem;
+    text-decoration: none;
+  }
+
+  .cur {
+    color: #ffffff;
+    background-color: $primary;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 0px;
+      border-top: 15px solid $primary;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      position: absolute;
+      left: 50%;
+      margin: -8px;
+      margin-top: 20px;
+    }
+  }
+
+  .table {
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .thead {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+  }
+
+  .order {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+    // color: $secondary;
+    font-size: 0.9rem;
+  }
+
+  .timer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 0;
+    // color: $secondary;
+    font-size: 0.9rem;
+  }
+
+  .tr {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+  }
+
+  .th {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 0.8rem;
+    color: $primary;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 20px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .td {
+    font-size: 0.8rem;
+    color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 20px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .td_flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .td_btc_down {
+    display: flex;
+    color: $priceDown;
+  }
+
+  .td_btc_up {
+    display: flex;
+    color: $priceUp;
+  }
+
+  .td_btn_up {
+    line-height: 20px;
+    color: $priceUp;
+  }
+
+  .td_btn_down {
+    line-height: 20px;
+    color: $priceDown;
+  }
+
+  .expand_content {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    color: #888;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .content_tr {
+    height: 25px;
+    display: grid;
+    grid-template-columns: 42% 6% 42% 10%;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+
+    img {
+      width: 15px;
+      vertical-align: middle;
+    }
+  }
+
+  .content_tr_bet {
+    height: 19px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 35% 13% 10% 25% 17%;
+    font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .change_down {
+    color: $primary;
+  }
+
+  .change_up {
+    color: $primary;
+  }
+
+  .expand_btn {
+    a {
+      color: #888;
+      text-decoration: none;
+    }
+  }
+
+  .td_buy {
+    color: $active;
+  }
+
+  .td_price_Up {
+    color: $priceUp;
+  }
+
+  .td_price_Down {
+    color: $priceDown;
+  }
+
+  .marketSelectMenu__items__fluctuate {
+    position: relative;
+  }
+
+  .fluctuation_down {
+    content: '';
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.3rem 0.3rem 0 0.3rem;
+    border-color: $priceDown transparent transparent transparent;
+  }
+
+  .fluctuation_up {
+    content: '';
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0.3rem 0.3rem 0.3rem;
+    border-color: transparent transparent $priceUp transparent;
+  }
+
+  .marketSelectMenu__nextPageButton {
+    position: fixed;
+    bottom: 10px;
+    font-size: 0px;
+
+    &::after {
+      border-width: 0.75rem 1rem 0 1rem;
+    }
+  }
+}

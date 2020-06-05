@@ -1,0 +1,121 @@
+.finalConfirmModel {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &.show {
+    z-index: 60;
+    opacity: 1;
+  }
+
+  .finalConfirmModel__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #02132c;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+
+  .finalConfirmModel__header {
+    display: flex;
+    align-items: center;
+    font-size: $md-font;
+    color: white;
+    margin-bottom: 10px;
+
+    > img {
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  .finalConfirmModel__balance {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .finalConfirmModel__transitionDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: $md-font;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+    .finalConfirmModel__transitionDetail__market {
+      display: flex;
+      align-items: center;
+
+      > img {
+        height: 35px;
+      }
+    }
+
+    > a.btn {
+      background-color: $priceUp;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .finalConfirmModel__transitionDetail__period {
+      background-color: rgb(165, 165, 165);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .reminder {
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    input {
+      display: none;
+    }
+  }
+
+  .finalConfirmModel__confirmButtons {
+    display: flex;
+    width: 100%;
+
+    a.btn {
+      width: 50%;
+      padding: 10px;
+      background-color: $primary;
+      color: $light;
+      text-align: center;
+
+      &:hover {
+        background-color: $active;
+        color: $lightest;
+      }
+    }
+  }
+}

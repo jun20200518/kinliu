@@ -1,0 +1,199 @@
+.personalInfoForm {
+  margin: 5px;
+  margin-top: 45px;
+  height: 91.5%;
+  font-size: $sm-font;
+
+  .personalInfoForm__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 20px 10px;
+    background-color: $dark;
+    overflow: inherit;
+    height: 100%;
+    position: relative;
+  }
+
+  .personalInfoForm__account {
+    width: 100%;
+    margin: 10%
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 100%;
+
+    >label {
+      text-align: right;
+      margin-right: 10px;
+      color: $light;
+      font-size: $sm-font;
+    }
+
+    >div {
+      display: flex;
+      width: 70%;
+
+      &.fileUpdate {
+        .form-control {
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          width: 40px;
+        }
+
+        input[type='file'] {
+          display: none;
+        }
+      }
+
+      .form-control {
+        position: relative;
+        width: 0;
+        flex: 1 1 auto;
+        padding: 5px;
+        color: white;
+        border: none;
+        background-color: $darker;
+
+        &.triangle::after {
+          position: absolute;
+          right: 5%;
+          top: 50%;
+        }
+
+        &.form-control {
+          margin-left: 5px;
+        }
+      }
+
+      select.form-control {
+        flex-grow: 1.5;
+      }
+    }
+  }
+
+  a.btn {
+    color: $light;
+    background-color: $darker;
+    padding: 10px;
+    font-size: $sm-font;
+
+    &.personalInfoForm__submitButton {
+      font-size: $md-font;
+      display: block;
+      width: 100%;
+      color: $lightest;
+    }
+  }
+
+  .personalInfoForm__content__password {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    >img {
+      height: 20px;
+    }
+  }
+
+
+
+  .personalInfoForm__content__reminder {
+    display: flex;
+    align-items: center;
+    color: $light;
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+  }
+}
+
+// 开关按钮
+.switch_demo {
+  position: relative;
+  width: 80px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.switch_demo-checkbox {
+  display: none;
+}
+
+.switch_demo-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.switch_demo-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.switch_demo-inner:before,
+.switch_demo-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  // font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.switch_demo-inner:before {
+  content: 'Off';
+  padding-left: 10px;
+  background-color: #eeeeee;
+  color: $darkest;
+}
+
+.switch_demo-inner:after {
+  content: 'On';
+  padding-right: 10px;
+  background-color: $active;
+  color: $lightest;
+  text-align: right;
+}
+
+.switch_demo-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.switch_demo-checkbox:checked+.switch_demo-label .switch_demo-inner {
+  margin-left: 0;
+}
+
+.switch_demo-checkbox:checked+.switch_demo-label .switch_demo-switch {
+  right: 0px;
+}

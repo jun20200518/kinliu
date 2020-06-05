@@ -1,0 +1,85 @@
+.triangle {
+  &::after {
+    content: '';
+    margin-left: 2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.25rem 0.25rem 0 0.25rem;
+    border-color: white transparent transparent transparent;
+  }
+  &.up::after {
+    content: '';
+    margin-left: 2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0.25rem 0.25rem 0.25rem;
+    border-color: transparent transparent white transparent;
+  }
+}
+
+.okcircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.stopcircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.reviewcircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: darkorange;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 5px;
+  z-index: 2;
+  height: 20px;
+  width: 50px;
+  box-shadow: 1px 1px 3px #13181a;
+  a {
+    text-decoration: none;
+    color: $light;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: $dark;
+  text-align: center;
+  box-shadow: 1px 1px 3px #13181a;
+  > li {
+    > a {
+      width: 100%;
+      display: inline-block;
+      padding: 5px;
+      &:hover {
+        background-color: $active;
+        color: $lightest;
+      }
+    }
+  }
+}
+
+.dropdown-toggle.btn {
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  background-color: $active;
+  color: $lightest;
+  > img {
+    width: 10px;
+  }
+}

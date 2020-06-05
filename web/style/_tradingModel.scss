@@ -1,0 +1,204 @@
+.tradingModel {
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+  font-weight: bold;
+  transition: transform 0.5s;
+  color: $primary;
+  &.show {
+    transform: translateY(0);
+  }
+
+  &.buy {
+    background-color: $dark;
+
+    .tradingModel__market {
+      background-color: $darkest;
+    }
+
+    .tradingModel__moneyOption input {
+      background-color: $darkest;
+
+      &.active {
+        background: lighten($darkest, 1%);
+      }
+    }
+
+    .tradingModel__confirm {
+      a.btn {
+        background-color: $priceUp;
+        color: #000;
+      }
+    }
+
+    .tradingModel__option > a.btn.active {
+      background: lighten($secondary, 20%);
+    }
+
+    .tradingModel__moneyOption_options > a.btn.active {
+      background: lighten($secondary, 20%);
+    }
+  }
+
+  &.sell {
+    background-color: $darker;
+
+    .tradingModel__market {
+      background-color: $darkest;
+    }
+
+    .tradingModel__moneyOption input {
+      background-color: $darkest;
+
+      &.active {
+        background: lighten($darkest, 10%);
+      }
+    }
+
+    .tradingModel__confirm {
+      a.btn {
+        background-color: $priceDown;
+        color: #000;
+      }
+    }
+
+    .tradingModel__option > a.btn.active {
+      background: lighten($secondary, 20%);
+    }
+
+    .tradingModel__moneyOption_options > a.btn.active {
+      background: lighten($secondary, 20%);
+    }
+  }
+
+  .tradingModel__market {
+    display: flex;
+    align-items: center;
+    color: $primary;
+    padding: 5px;
+    font-size: $md-font;
+    margin-bottom: 20px;
+
+    > div {
+      margin-right: auto;
+    }
+  }
+
+  .tradingModel__market_name {
+    display: flex;
+    align-items: center;
+
+    > img {
+      height: 20px;
+      margin-right: 2px;
+    }
+  }
+
+  .tradingModel__option {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    > a.btn {
+      & + a.btn {
+        margin-left: 5px;
+      }
+
+      flex: 1 1 auto;
+      background-color: #fff;
+      padding: 10px 5px;
+      border: none;
+      border-radius: 5px;
+
+      span {
+        display: block;
+        font-weight: bold;
+      }
+
+      .tradingModel__option_odds {
+        color: #c71927;
+      }
+    }
+  }
+
+  .tradingModel__moneyOption {
+    text-align: center;
+    color: $primary;
+
+    > h4 {
+      font-size: $sm-font;
+      margin-bottom: 5px;
+    }
+
+    .tradingModel__moneyOption_options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+
+      > a.btn {
+        margin-top: 4px;
+
+        margin-right: 5px;
+
+        flex: 1 1 auto;
+        color: $primary;
+        padding: 5px;
+        background-color: transparent;
+        border-style: dashed;
+        border-width: 1px;
+      }
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      text-align: center;
+      font-size: $sm-font;
+      color: $primary;
+      padding: 5px;
+      margin-bottom: 5px;
+      font-size: initial;
+
+      &::placeholder {
+        color: $primary;
+      }
+    }
+  }
+
+  .tradingModel__moneyOption__balance {
+    font-size: $sm-font;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .tradingModel__confirm {
+    a.btn {
+      display: block;
+      width: 100%;
+      border: none;
+      font-weight: bold;
+      font-size: $lg-font;
+      margin-bottom: 5px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .disabled {
+      background-color: gray !important;
+      pointer-events: none !important;
+    }
+
+    .tradingModel__confirm__expectation {
+      display: flex;
+      justify-content: space-between;
+      color: $primary;
+      font-size: $sm-font;
+    }
+  }
+}

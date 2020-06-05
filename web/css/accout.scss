@@ -1,0 +1,208 @@
+@import './variables';
+
+.title {
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main {
+  margin-top: 50px;
+}
+
+.logoimg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user {
+  width: 100%;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+
+  img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span {
+    line-height: 40px;
+  }
+}
+
+.money {
+  background-color: white;
+  width: 80%;
+  height: 40px;
+  margin: 10px 10%;
+  border-radius: 5px;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.rmb {
+  height: 230px;
+  width: 94%;
+  margin-left: 3%;
+  background-color: $dark;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  input {
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: $darker;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 0px;
+    margin-top: 10px;
+    color: $lightest;
+  }
+}
+
+.bank {
+  background-color: $darker;
+  width: 50%;
+  height: 30px;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: $light;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 30%;
+}
+
+.entermoney {
+  height: 100px;
+  margin: 5px 3% 5px;
+  width: 94%;
+  background-color: $dark;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  input {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: $darker;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 0px;
+    color: $lightest;
+  }
+}
+
+
+.rmbbtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  >a.btn {
+    line-height: 50px;
+    height: 50px;
+    background-color: $darker;
+    border: 0px;
+    border-radius: 5px;
+    flex: 0 0 23%;
+    margin: 2px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    color: $lightest;
+    outline: none;
+
+    &.active {
+      background-color: $active;
+    }
+  }
+}
+
+
+
+.confirm {
+  margin-left: 3%;
+  height: 50px;
+  width: 94%;
+  text-align: center;
+
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 0px;
+    background-color: $active;
+    border-radius: 5px;
+    margin: 0px;
+  }
+}
+
+.gopay {
+  margin-left: 3%;
+  height: 50px;
+  width: 94%;
+  text-align: center;
+
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 0px;
+    background-color: $active;
+    border-radius: 5px;
+    margin: 0px;
+  }
+}
+
+.bankaccount {
+  color: $light;
+  margin: 15px auto;
+  font-size: 1rem;
+
+  th {
+    text-align: right;
+  }
+
+  td {
+    text-align: left;
+  }
+}
+
+.font1 {
+  font-size: 1.3rem;
+  margin: 0%;
+  color: $lightest;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.font2 {
+  font-size: 1.5rem;
+  margin: 0%;
+  color: $lightest;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.font3 {
+  line-height: 50px;
+  color: $light;
+  margin: 0px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,13 @@
+﻿.personal{}
+.pmain,.smain,.tmain,.amain,.fmain{background:#fff;}
+.phead{position:relative}
+.phead span{display:inline-table;}
+.phead .ph1{padding:10px 10px;width:100px;overflow:hidden;}
+.phead .ph1 img {width:100%;border-radius:100%;}
+.phead .ph2{font-size:12px;color:#fff;width:65%;height:100%;}
+.phead .ph2 div{line-height:60px;height:18px;width:60%;margin-left:10%;border-bottom:1px solid rgba;}
+.phead .ph2 div span{text-indent:-10%;height:100%;display:block;margin:auto;}
+.phead .ph2 i{display:block;width:0%;border-bottom:1.5px solid rgba(255,255,255,.2);font-style:normal;margin:auto;}
+.phead .ph3{width:100px;height:100%;text-align:right;position:absolute;top:0;right:0;}
+.phead .ph3 span{background:rgba(250,43,39,.6);cursor:pointer;border-radius:3px;padding:5px 15px;margin-right:10px;margin-top:35px;color:#fff;font-size:16px;text-indent:2px;letter-spacing:2px;}
+

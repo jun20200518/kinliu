@@ -1,0 +1,189 @@
+.marketModel {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s 0.5s;
+
+  &.show {
+    z-index: 80;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+}
+
+.market_wrapper {
+  width: 90%;
+  height: 80%;
+  background-color: $dark;
+  border-radius: 5px;
+
+  .market_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+  }
+
+  .market_buttons {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+
+    > a.btn {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+      background-color: #fff;
+      color: gray;
+      font-size: 0.75rem;
+
+      &.active {
+        color: #ffffff;
+        background-color: $active;
+      }
+
+      &.withIcon {
+        > img {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .price_wrapper {
+    overflow: scroll;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .table {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+  }
+
+  .thead {
+    width: 100%;
+    height: 40px;
+    background-color: $primary;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba($color: #000000, $alpha: 0.5);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+  }
+
+  .th {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 0.8rem;
+    color: $lightest;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 10px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .tr {
+    width: 100%;
+    height: 60px;
+    background-color: $darker;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba($color: #000000, $alpha: 0.5);
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+  }
+
+  .td {
+    font-size: 0.8rem;
+    color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    img {
+      height: 20px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .td_flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .td_currentprice {
+    background-color: rgba($active, $alpha: 0.5);
+    border: $active 1px solid;
+    width: 85%;
+    text-align: center;
+
+    margin-left: 10%;
+    height: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .market_confirmButtons {
+    width: 100%;
+    vertical-align: middle;
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: $primary;
+      color: $lightest;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+
+      &:hover {
+        background-color: $active;
+        color: $lightest;
+      }
+    }
+  }
+
+  .market_nextPageButton {
+    position: fixed;
+    bottom: 10px;
+    font-size: 0px;
+
+    &::after {
+      border-width: 0.75rem 1rem 0 1rem;
+    }
+  }
+}

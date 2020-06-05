@@ -1,0 +1,2233 @@
+@charset "UTF-8";
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.triangle::after {
+  content: '';
+  margin-left: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.25rem 0.25rem 0 0.25rem;
+  border-color: white transparent transparent transparent;
+}
+
+.triangle.up::after {
+  content: '';
+  margin-left: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.25rem 0.25rem 0.25rem;
+  border-color: transparent transparent white transparent;
+}
+
+.leftlogo img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.circle {
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #568bc7;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 5px;
+  z-index: 2;
+  height: 20px;
+  width: 50px;
+  -webkit-box-shadow: 1px 1px 3px #13181a;
+  box-shadow: 1px 1px 3px #13181a;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #666767;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: #f3f7fc;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 3px #13181a;
+  box-shadow: 1px 1px 3px #13181a;
+}
+
+.dropdown-menu > li > a {
+  width: 100%;
+  display: inline-block;
+  padding: 5px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #568bc7;
+  color: #fff;
+}
+
+.dropdown-toggle.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 20px;
+  height: 20px;
+  background-color: #568bc7;
+  color: #fff;
+}
+
+.dropdown-toggle.btn > img {
+  width: 10px;
+}
+
+.priceSummary a.btn {
+  background-color: #f3f7fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 5px;
+  margin: 5px 5px 0px 5px;
+  margin-top: 45px;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  color: #568bc7;
+  height: 60px;
+  -ms-grid-columns: 23% 21% 22% 25% 5%;
+  grid-template-columns: 23% 21% 22% 25% 5%;
+  text-align: center;
+}
+
+.priceSummary > div {
+  margin-right: 5px;
+}
+
+.priceSummary > div:last-child {
+  margin: 0;
+}
+
+.priceSummary > div .priceSummary__category__title {
+  color: #666767;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.priceSummary > div.priceSummary__category__fluctuation {
+  text-align: center;
+}
+
+.priceSummary
+  > div.priceSummary__category__fluctuation
+  .priceSummary__category__fluctuation__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.priceSummary
+  > div.priceSummary__category__fluctuation
+  .priceSummary__category__fluctuation_down {
+  color: #6fa22f;
+  position: relative;
+}
+
+.priceSummary
+  > div.priceSummary__category__fluctuation
+  .priceSummary__category__fluctuation_down:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.25rem 0.25rem 0 0.25rem;
+  border-color: #6fa22f transparent transparent transparent;
+}
+
+.priceSummary
+  > div.priceSummary__category__fluctuation
+  .priceSummary__category__fluctuation_up {
+  color: #ff001e;
+  position: relative;
+}
+
+.priceSummary
+  > div.priceSummary__category__fluctuation
+  .priceSummary__category__fluctuation_up:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.25rem 0.25rem 0.25rem;
+  border-color: transparent transparent #ff001e transparent;
+}
+
+.priceSummary .priceSummary__market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.priceSummary .priceSummary__market > img {
+  height: 20px;
+}
+
+.priceSummary .priceSummary_now {
+  color: #122e8a;
+  font-size: 0.75rem;
+}
+
+.priceSummary .price_text {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.priceSummary .price_num {
+  font-size: 0.8rem;
+}
+
+.priceSummary .price_num_now {
+  font-size: 1rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.tradePanel {
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.tradePanel .tradePanel__viewChangeButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.tradePanel .tradePanel__viewChangeButtons a.btn {
+  font-size: 1rem;
+  width: 50%;
+  padding: 10px 0;
+  color: #666767;
+  border: 0;
+  background-color: #f3f7fc;
+}
+
+.tradePanel .tradePanel__viewChangeButtons a.btn.active {
+  color: #ffffff;
+  background-color: #568bc7;
+}
+
+.tradePanel .tradePanel__viewChangeButtons a.btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.tradePanel .tradePanel__viewChangeButtons a.btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.tradePanel .tradePanel__Summary {
+  width: 100%;
+}
+
+.tradePanel .tradePanel__Summary tr {
+  background-color: #f3f7fc;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.tradePanel .tradePanel__Summary tr th {
+  color: #666767;
+  font-size: 0.9rem;
+}
+
+.tradePanel .tradePanel__Summary tr th,
+.tradePanel .tradePanel__Summary tr td {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  text-align: center;
+}
+
+.tradePanel .tradePanel__Summary tbody {
+  display: block;
+  height: 150px;
+  padding-bottom: 30px;
+  overflow: scroll;
+}
+
+.tradePanel .tradePanel__Summary tbody tr {
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.tradePanel .tradePanel__Summary .tradePanel__Summary__market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.tradePanel .tradePanel__Summary .tradePanel__Summary__market > img {
+  height: 20px;
+  margin-right: 2px;
+}
+
+.tradePanel .tradePanel__Summary .tradePanel__Summary__time {
+  font-size: 0.9rem;
+}
+
+.tradingModel {
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  color: #122e8a;
+}
+
+.tradingModel.show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.tradingModel.buy {
+  background-color: #f3f7fc;
+}
+
+.tradingModel.buy .tradingModel__market {
+  background-color: #dce7f5;
+}
+
+.tradingModel.buy .tradingModel__moneyOption input {
+  background-color: #dce7f5;
+}
+
+.tradingModel.buy .tradingModel__moneyOption input.active {
+  background: #e0eaf6;
+}
+
+.tradingModel.buy .tradingModel__confirm a.btn {
+  background-color: #ff001e;
+  color: #000;
+}
+
+.tradingModel.buy .tradingModel__option > a.btn.active {
+  background: #a3c0e0;
+}
+
+.tradingModel.buy .tradingModel__moneyOption_options > a.btn.active {
+  background: #a3c0e0;
+}
+
+.tradingModel.sell {
+  background-color: #f3f7fc;
+}
+
+.tradingModel.sell .tradingModel__market {
+  background-color: #dce7f5;
+}
+
+.tradingModel.sell .tradingModel__moneyOption input {
+  background-color: #dce7f5;
+}
+
+.tradingModel.sell .tradingModel__moneyOption input.active {
+  background: white;
+}
+
+.tradingModel.sell .tradingModel__confirm a.btn {
+  background-color: #6fa22f;
+  color: #000;
+}
+
+.tradingModel.sell .tradingModel__option > a.btn.active {
+  background: #a3c0e0;
+}
+
+.tradingModel.sell .tradingModel__moneyOption_options > a.btn.active {
+  background: #a3c0e0;
+}
+
+.tradingModel .tradingModel__market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #122e8a;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.tradingModel .tradingModel__market > div {
+  margin-right: auto;
+}
+
+.tradingModel .tradingModel__market_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tradingModel .tradingModel__market_name > img {
+  height: 20px;
+  margin-right: 2px;
+}
+
+.tradingModel .tradingModel__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.tradingModel .tradingModel__option > a.btn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #fff;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tradingModel .tradingModel__option > a.btn + a.btn {
+  margin-left: 5px;
+}
+
+.tradingModel .tradingModel__option > a.btn span {
+  display: block;
+  font-weight: bold;
+}
+
+.tradingModel .tradingModel__option > a.btn .tradingModel__option_odds {
+  color: #c71927;
+}
+
+.tradingModel .tradingModel__moneyOption {
+  text-align: center;
+  color: #122e8a;
+}
+
+.tradingModel .tradingModel__moneyOption > h4 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.tradingModel .tradingModel__moneyOption .tradingModel__moneyOption_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tradingModel
+  .tradingModel__moneyOption
+  .tradingModel__moneyOption_options
+  > a.btn {
+  margin-top: 4px;
+  margin-right: 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  color: #122e8a;
+  padding: 5px;
+  background-color: transparent;
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.tradingModel .tradingModel__moneyOption input {
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #122e8a;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: initial;
+}
+
+.tradingModel .tradingModel__moneyOption input::-webkit-input-placeholder {
+  color: #122e8a;
+}
+
+.tradingModel .tradingModel__moneyOption input:-ms-input-placeholder {
+  color: #122e8a;
+}
+
+.tradingModel .tradingModel__moneyOption input::-ms-input-placeholder {
+  color: #122e8a;
+}
+
+.tradingModel .tradingModel__moneyOption input::placeholder {
+  color: #122e8a;
+}
+
+.tradingModel .tradingModel__moneyOption__balance {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.tradingModel .tradingModel__confirm a.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.tradingModel .tradingModel__confirm .disabled {
+  background-color: gray !important;
+  pointer-events: none !important;
+}
+
+.tradingModel .tradingModel__confirm .tradingModel__confirm__expectation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #122e8a;
+  font-size: 0.9rem;
+}
+
+.finalConfirmModel {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.finalConfirmModel.show {
+  z-index: 60;
+  opacity: 1;
+}
+
+.finalConfirmModel .finalConfirmModel__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  background-color: #02132c;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.finalConfirmModel .finalConfirmModel__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.finalConfirmModel .finalConfirmModel__header > img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.finalConfirmModel .finalConfirmModel__balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.finalConfirmModel .finalConfirmModel__transitionDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.finalConfirmModel
+  .finalConfirmModel__transitionDetail
+  .finalConfirmModel__transitionDetail__market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.finalConfirmModel
+  .finalConfirmModel__transitionDetail
+  .finalConfirmModel__transitionDetail__market
+  > img {
+  height: 35px;
+}
+
+.finalConfirmModel .finalConfirmModel__transitionDetail > a.btn {
+  background-color: #ff001e;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.finalConfirmModel
+  .finalConfirmModel__transitionDetail
+  .finalConfirmModel__transitionDetail__period {
+  background-color: #a5a5a5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.finalConfirmModel .reminder {
+  margin-bottom: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.finalConfirmModel .reminder input {
+  display: none;
+}
+
+.finalConfirmModel .finalConfirmModel__confirmButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.finalConfirmModel .finalConfirmModel__confirmButtons a.btn {
+  width: 50%;
+  padding: 10px;
+  background-color: #122e8a;
+  color: #666767;
+  text-align: center;
+}
+
+.finalConfirmModel .finalConfirmModel__confirmButtons a.btn:hover {
+  background-color: #568bc7;
+  color: #fff;
+}
+
+.userCenterMenu {
+  position: fixed;
+  width: 80%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  background: #dce7f5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.userCenterMenu.show {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.userCenterMenu .wrapper {
+  bottom: 45px;
+}
+
+.userCenterMenu > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #122e8a;
+  padding: 10px;
+  width: 100%;
+}
+
+.userCenterMenu > nav img {
+  height: 20px;
+  padding-left: 20px;
+  margin-left: -15px;
+}
+
+.userCenterMenu > nav::before {
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-color: transparent white transparent transparent;
+}
+
+.userCenterMenu .userCenterMenu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.userCenterMenu #transaction_btn {
+  width: 100%;
+}
+
+.userCenterMenu .marketSelectMenu__header {
+  margin: 10px auto;
+  width: 50%;
+}
+
+.userCenterMenu .marketSelectMenu__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.userCenterMenu .menu_btn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2px;
+  background-color: #fff;
+  color: gray;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.userCenterMenu .cur {
+  color: #ffffff;
+  background-color: #122e8a;
+  position: relative;
+}
+
+.userCenterMenu .cur:after {
+  content: '';
+  width: 0px;
+  border-top: 15px solid #122e8a;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin: -8px;
+  margin-top: 20px;
+}
+
+.userCenterMenu .table {
+  width: 100%;
+  font-weight: 700;
+}
+
+.userCenterMenu .thead {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+
+.userCenterMenu .order {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
+  font-size: 0.9rem;
+}
+
+.userCenterMenu .timer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 0;
+  font-size: 0.9rem;
+}
+
+.userCenterMenu .tr {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: relative;
+}
+
+.userCenterMenu .th {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 0.8rem;
+  color: #122e8a;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.userCenterMenu .th img {
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.userCenterMenu .td {
+  font-size: 0.8rem;
+  color: #122e8a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.userCenterMenu .td img {
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.userCenterMenu .td_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userCenterMenu .td_btc_down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ff001e;
+}
+
+.userCenterMenu .td_btc_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6fa22f;
+}
+
+.userCenterMenu .td_btn_up {
+  line-height: 20px;
+  color: #ff001e;
+}
+
+.userCenterMenu .td_btn_down {
+  line-height: 20px;
+  color: #6fa22f;
+}
+
+.userCenterMenu .expand_content {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  color: #888;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.userCenterMenu .content_tr {
+  height: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 42% 6% 42% 10%;
+  grid-template-columns: 42% 6% 42% 10%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.userCenterMenu .content_tr img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+.userCenterMenu .content_tr_bet {
+  height: 19px;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 13% 10% 25% 17%;
+  grid-template-columns: 35% 13% 10% 25% 17%;
+  font-size: 0.8rem;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.userCenterMenu .change_down {
+  color: #122e8a;
+}
+
+.userCenterMenu .change_up {
+  color: #122e8a;
+}
+
+.userCenterMenu .expand_btn a {
+  color: #888;
+  text-decoration: none;
+}
+
+.userCenterMenu .td_buy {
+  color: #568bc7;
+}
+
+.userCenterMenu .td_price_Up {
+  /* color: #6fa22f; */
+}
+
+.userCenterMenu .td_price_Down {
+  /* color: #ff001e; */
+}
+
+.userCenterMenu .marketSelectMenu__items__fluctuate {
+  position: relative;
+}
+
+.userCenterMenu .fluctuation_down {
+  content: '';
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.3rem 0.3rem 0 0.3rem;
+  border-color: #6fa22f transparent transparent transparent;
+}
+
+.userCenterMenu .fluctuation_up {
+  content: '';
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.3rem 0.3rem 0.3rem;
+  border-color: transparent transparent #ff001e transparent;
+}
+
+.userCenterMenu .marketSelectMenu__nextPageButton {
+  position: fixed;
+  bottom: 10px;
+  font-size: 0px;
+}
+
+.userCenterMenu .marketSelectMenu__nextPageButton::after {
+  border-width: 0.75rem 1rem 0 1rem;
+}
+
+.marketSelectMenu {
+  position: fixed;
+  width: 80%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 60;
+  background: #dce7f5;
+  font-size: 0.75rem;
+  text-align: center;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.marketSelectMenu.show {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.marketSelectMenu .wrapper {
+  bottom: 30px;
+}
+
+.marketSelectMenu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #122e8a;
+  padding: 10px;
+  width: 100%;
+}
+
+.marketSelectMenu nav img {
+  height: 20px;
+  padding-right: 20px;
+  margin-right: -15px;
+}
+
+.marketSelectMenu nav::after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-color: transparent transparent transparent white;
+}
+
+.marketSelectMenu .marketSelectMenu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.marketSelectMenu .userCenterMenu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #568bc7;
+  margin-bottom: 10px;
+}
+
+.marketSelectMenu .userCenterMenu__header > img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.marketSelectMenu .userCenterMenu__balance {
+  color: #122e8a;
+  background-color: #fff;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.marketSelectMenu .userCenterMenu__balance > div + div {
+  margin-left: 10px;
+}
+
+.marketSelectMenu .userCenterMenu__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: bold;
+}
+
+.marketSelectMenu .userCenterMenu__buttons > div {
+  width: 50%;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.marketSelectMenu .userCenterMenu__buttons .btn_shadow {
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 5px 2px;
+  padding: 0px;
+  width: 48%;
+  border-radius: 5px;
+}
+
+.marketSelectMenu .userCenterMenu__buttons a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  color: #568bc7;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  background-color: #fff;
+}
+
+.marketSelectMenu .userCenterMenu__buttons a.btn > img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.marketSelectMenu
+  .userCenterMenu__buttons
+  a.btn.userCenterMenu__buttons__chargeButton {
+  background-color: #122e8a;
+  color: #fff;
+}
+
+.marketSelectMenu
+  .userCenterMenu__buttons
+  a.btn.userCenterMenu__buttons__chargeButton
+  > img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.marketSelectMenu
+  .userCenterMenu__buttons
+  a.btn.userCenterMenu__buttons__withdrawButton {
+  background-color: #122e8a;
+  color: #fff;
+}
+
+.marketSelectMenu
+  .userCenterMenu__buttons
+  a.btn.userCenterMenu__buttons__withdrawButton
+  > img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.marketSelectMenu .userCenterMenu__logoutButton {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px;
+  width: 80%;
+  background-color: #568bc7;
+  color: white;
+}
+
+.marketSelectMenu .userCenterMenu__logoutButton > img {
+  height: 30px;
+  margin-right: 5px;
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+}
+
+.personalInfoForm {
+  margin: 5px;
+  margin-top: 45px;
+  height: 91.5%;
+  font-size: 0.9rem;
+}
+
+.personalInfoForm .personalInfoForm__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 20px 10px;
+  background-color: #f3f7fc;
+  overflow: inherit;
+  height: 100%;
+  position: relative;
+}
+
+.personalInfoForm .personalInfoForm__account {
+  width: 100%;
+  margin: 10%;
+}
+
+.personalInfoForm .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.personalInfoForm .form-row > label {
+  text-align: right;
+  margin-right: 10px;
+  color: #666767;
+  font-size: 0.9rem;
+}
+
+.personalInfoForm .form-row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+}
+
+.personalInfoForm .form-row > div.fileUpdate .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.personalInfoForm .form-row > div.fileUpdate img {
+  width: 40px;
+}
+
+.personalInfoForm .form-row > div.fileUpdate input[type='file'] {
+  display: none;
+}
+
+.personalInfoForm .form-row > div .form-control {
+  position: relative;
+  width: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 5px;
+  color: white;
+  border: none;
+  background-color: #f3f7fc;
+}
+
+.personalInfoForm .form-row > div .form-control.triangle::after {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+
+.personalInfoForm .form-row > div .form-control.form-control {
+  margin-left: 5px;
+}
+
+.personalInfoForm .form-row > div select.form-control {
+  -webkit-box-flex: 1.5;
+  -ms-flex-positive: 1.5;
+  flex-grow: 1.5;
+}
+
+.personalInfoForm a.btn {
+  color: #666767;
+  background-color: #f3f7fc;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.personalInfoForm a.btn.personalInfoForm__submitButton {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+.personalInfoForm .personalInfoForm__content__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0;
+  color: white;
+  background-color: #122e8a;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.personalInfoForm .personalInfoForm__content__password > img {
+  height: 20px;
+}
+
+.personalInfoForm .personalInfoForm__content__reminder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666767;
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+}
+
+.switch_demo {
+  position: relative;
+  width: 80px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.switch_demo-checkbox {
+  display: none;
+}
+
+.switch_demo-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.switch_demo-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.switch_demo-inner:before,
+.switch_demo-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.switch_demo-inner:before {
+  content: 'Off';
+  padding-left: 10px;
+  background-color: #eeeeee;
+  color: #dce7f5;
+}
+
+.switch_demo-inner:after {
+  content: 'On';
+  padding-right: 10px;
+  background-color: #568bc7;
+  color: #fff;
+  text-align: right;
+}
+
+.switch_demo-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.switch_demo-checkbox:checked + .switch_demo-label .switch_demo-inner {
+  margin-left: 0;
+}
+
+.switch_demo-checkbox:checked + .switch_demo-label .switch_demo-switch {
+  right: 0px;
+}
+
+.period_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.period_buttons > a.btn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #122e8a;
+}
+
+.period_buttons > a.btn + a.btn {
+  margin-left: 5px;
+}
+
+.withdrawRecord {
+  border-spacing: 0px 2px;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  color: #122e8a;
+}
+
+.withdrawRecord span {
+  color: inherit;
+  text-decoration: none;
+}
+
+.withdrawRecord thead > tr {
+  color: #666;
+  text-align: center;
+  font-weight: bold;
+}
+
+.withdrawRecord tbody > tr {
+  background-color: #ffffff;
+}
+
+.withdrawRecord tbody > tr:nth-child(2n) {
+  background-color: #f3f7fc;
+}
+
+.withdrawRecord th,
+.withdrawRecord td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.withdrawRecord th:first-child,
+.withdrawRecord td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.withdrawRecord th:last-child,
+.withdrawRecord td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fundRecord {
+  table-layout: fixed;
+  border-spacing: 0px 3px;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  color: #122e8a;
+}
+
+.fundRecord span {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fundRecord thead > tr {
+  color: #666;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fundRecord tbody > tr {
+  background-color: #ffffff;
+}
+
+.fundRecord tbody > tr:nth-child(2n) {
+  background-color: #f3f7fc;
+}
+
+.fundRecord tbody > tr.success {
+  background-color: #568bc7;
+  color: #fff;
+}
+
+.fundRecord th,
+.fundRecord td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.fundRecord th:first-child,
+.fundRecord td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.fundRecord th:last-child,
+.fundRecord td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fundRecord .fundRecord__item {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.marketModel {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+
+.marketModel.show {
+  z-index: 80;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.market_wrapper {
+  width: 95%;
+  height: 80%;
+  background-color: #f3f7fc;
+  border-radius: 5px;
+}
+
+.market_wrapper .market_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+.market_wrapper .market_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.market_wrapper .market_buttons > a.btn {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2px;
+  background-color: #fff;
+  color: gray;
+  font-size: 0.75rem;
+}
+
+.market_wrapper .market_buttons > a.btn.active {
+  color: #ffffff;
+  background-color: #568bc7;
+}
+
+.market_wrapper .market_buttons > a.btn.withIcon > img {
+  height: 20px;
+}
+
+.market_wrapper .price_wrapper .price_wrapper{
+  overflow: scroll;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0.75rem;
+}
+
+.market_wrapper .table {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+
+.market_wrapper .thead {
+  width: 100%;
+  height: 40px;
+  background-color: #122e8a;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 22% 22% 31%;
+  grid-template-columns: 25% 22% 22% 31%;
+  text-align: center;
+}
+
+.market_wrapper .th {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.market_wrapper .th img {
+  height: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.market_wrapper .tr {
+  width: 100%;
+  height: 60px;
+  background-color: #f3f7fc;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 22% 22% 31%;
+  grid-template-columns: 25% 22% 22% 31%;
+  position: relative;
+}
+
+.market_wrapper .td {
+  font-size: 0.8rem;
+  color: #122e8a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+}
+
+.market_wrapper .td img {
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.market_wrapper .td_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.market_wrapper .td_currentprice {
+  /* background-color: rgba(86, 139, 199, 0.5);
+    border: #568bc7 1px solid; */
+  font-size: 0.975rem;
+  width: 85%;
+  text-align: center;
+  margin-left: 10%;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.market_wrapper .market_confirmButtons {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.market_wrapper .market_confirmButtons button {
+  width: 100%;
+  padding: 10px;
+  background-color: #122e8a;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.market_wrapper .market_confirmButtons button:hover {
+  background-color: #568bc7;
+  color: #fff;
+}
+
+.market_wrapper .market_nextPageButton {
+  position: fixed;
+  bottom: 10px;
+  font-size: 0px;
+}
+
+.market_wrapper .market_nextPageButton::after {
+  border-width: 0.75rem 1rem 0 1rem;
+}
+
+*,
+body,
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: '微軟正黑體', 'Microsoft JhengHei', 'Segoe UI Semibold',
+    'Segoe UI', 'Lucida Grande', 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+html,
+body {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.wrapper {
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+a.btn {
+  text-align: center;
+  text-decoration: none;
+}
+
+a.btn.active {
+  background-color: #568bc7;
+}
+
+.blurMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 49;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.blurMask.show {
+  display: block;
+}
+
+.buyblurMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.buyblurMask.show {
+  display: block;
+}
+
+body {
+  background-color: #dce7f5;
+}
+
+nav {
+  background-color: #122e8a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+}
+
+nav .marketSelectMenuButton,
+nav .userCenterMenuButton {
+  -webkit-filter: brightness(5);
+  filter: brightness(5);
+}
+
+nav img {
+  height: 25px;
+  cursor: pointer;
+}
+
+nav .icon_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+nav .icon_wrapper > img {
+  margin-right: 10px;
+  height: 20px;
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+}
+
+main {
+  background-color: #f3f7fc;
+  margin: 5px;
+  padding: 5px;
+}
+
+main .newsTicker {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: #122e8a;
+  background-color: #fff;
+}
+
+main .newsTicker > ul {
+  position: relative;
+  top: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-animation: moveOverLeft 25s linear infinite;
+  animation: moveOverLeft 25s linear infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .newsTicker > ul > li {
+  white-space: nowrap;
+  margin-right: 2em;
+  font-weight: bold;
+}
+
+main .controlButtons {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666767;
+}
+
+main .controlButtons a.btn {
+  padding: 0 5px;
+}
+
+main .controlButtons .controlButtons_chartChangePanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .controlButtons .controlButtons_chartChangePanel a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 1px 1px 3px #dce7f5;
+  box-shadow: 1px 1px 3px #dce7f5;
+}
+
+main .controlButtons .controlButtons_chartChangePanel a.btn.active img {
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+}
+
+main .controlButtons .controlButtons_chartChangePanel img {
+  height: 20px;
+}
+
+main .controlButtons .controlButtons_periodChangePanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main .controlButtons .controlButtons_periodChangePanel a.btn {
+  color: #666767;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border-color: #666767;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+main .controlButtons .controlButtons_periodChangePanel a.btn > span {
+  font-size: 0.25rem;
+}
+
+input {
+  outline: none;
+  font-size: initial;
+}
+
+.transitionButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 48;
+  width: 100%;
+  padding: 5px 5px 0 5px;
+  background-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.transitionButtons a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  color: #000;
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.transitionButtons a.btn > img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.transitionButtons .transitionButtons_up {
+  background-color: #ff001e;
+}
+
+.transitionButtons .transitionButtons_up.dilute {
+  background: #66000c;
+  color: black;
+}
+
+.transitionButtons .transitionButtons_down {
+  background-color: #6fa22f;
+}
+
+.transitionButtons .transitionButtons_down.dilute {
+  background: #395318;
+  color: black;
+}
+
+.transitionButtons a.btn + a.btn {
+  margin-left: 5px;
+}
+
+#chartView {
+  position: relative;
+  z-index: 0;
+}
+
+.alter {
+  width: 100%;
+}
+
+.alter .change_password {
+  background-color: #122e8a;
+  width: 85%;
+  height: 60px;
+  border-radius: 5px;
+  margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.alter .change_password img {
+  height: 25px;
+  margin: 0 10%;
+}
+
+.alter .change_password input {
+  background-color: transparent;
+  border: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 28px;
+  margin: 0px 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666767;
+  padding: 0 5px;
+  width: 100%;
+}
+
+.alter .change_password:active {
+  background-color: #568bc7;
+  color: #fff;
+}
+
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,357 @@
+@import './variables';
+
+.title {
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main {
+  margin-top: 50px;
+}
+
+.logoimg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user {
+  width: 100%;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+
+  img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span {
+    line-height: 40px;
+  }
+}
+
+.money {
+  color: $primary;
+  background-color: white;
+  width: 80%;
+  height: 40px;
+  margin: 10px 10%;
+  border-radius: 5px;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.rmb {
+  height: 250px;
+  width: 94%;
+  margin-left: 3%;
+  background-color: $dark;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+  input {
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    margin-top: 10px;
+    color: $primary;
+  }
+}
+
+.bank {
+  background-color: $darker;
+  width: 55%;
+  height: 30px;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align-last: center;
+}
+
+.bank_addaccount {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+
+  input {
+    width: 53%;
+  }
+
+  > a.btn {
+    background-color: $active;
+    border: none;
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+}
+
+.entermoney {
+  height: 100px;
+  margin: 5px 3% 5px;
+  width: 94%;
+  background-color: $dark;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+  input {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    color: $primary;
+  }
+}
+
+.rmbbtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > a.btn {
+    line-height: 50px;
+    height: 50px;
+
+    background-color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    flex: 0 0 23%;
+    margin: 2px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    color: $primary;
+    outline: none;
+
+    &.active {
+      background-color: $active;
+    }
+  }
+}
+
+.confirm {
+  margin-left: 3%;
+  height: 50px;
+  width: 94%;
+  text-align: center;
+
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 0px;
+    color: $lightest;
+    background-color: $active;
+    border-radius: 5px;
+    margin: 0px;
+  }
+}
+
+.gopay {
+  margin-left: 3%;
+  height: 50px;
+  width: 94%;
+  text-align: center;
+
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 0px;
+    color: #fff;
+    background-color: $secondary;
+    border-radius: 5px;
+    margin: 0px;
+  }
+}
+
+.bankaccount {
+  color: $primary;
+  width: 90%;
+  margin: 15px auto;
+  font-size: 1rem;
+
+  th {
+    width: 50%;
+    text-align: right;
+  }
+
+  td {
+    text-align: left;
+    width: 50%;
+  }
+}
+
+.font1 {
+  font-size: 1.3rem;
+  margin: 0%;
+  color: $primary;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.font2 {
+  font-size: 1.5rem;
+  margin: 0%;
+  color: $primary;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.font3 {
+  line-height: 50px;
+  color: $primary;
+  margin: 0px;
+  font-size: 1.2rem;
+}
+
+// .modify_account {
+//   background-color: rgba($color: #000000, $alpha: 0.8);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   opacity: 0;
+//   transition: all 0.5s 0.5s;
+
+//   &.show {
+//     z-index: 1000;
+//     opacity: 1;
+//     transition: all 0.5s;
+//   }
+// }
+
+.modify_account_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  border-radius: 5px;
+
+  .modify_account_head {
+    color: $lightest;
+    font-size: $lg-font;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background-color: $active;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .modify_account_body {
+    color: $primary;
+    font-size: $md-font;
+    width: 100%;
+    height: 35px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+  }
+
+  .modify_input {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .modify_account_footer {
+    color: $primary;
+    font-size: $md-font;
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modify_bank {
+      background-color: $darker;
+      width: 90%;
+      height: 40px;
+      border: 0px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      color: $primary;
+      font-size: 1rem;
+      text-align-last: center;
+      margin: 2px;
+    }
+
+    input {
+      width: 90%;
+      height: 40px;
+      text-align: center;
+      font-size: 1rem;
+      background-color: $darker;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      border: 0px;
+      color: $lightest;
+      margin: 2px;
+    }
+  }
+
+  .modify_account_Buttons {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+
+    button.btn {
+      width: 50%;
+      padding: 10px;
+      background-color: $primary;
+      color: $primary;
+      text-align: center;
+      border: none;
+
+      &:hover {
+        background-color: $active;
+        color: $lightest;
+      }
+    }
+  }
+}

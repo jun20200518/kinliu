@@ -1,0 +1,108 @@
+body{
+  margin: 0px;
+  background-color: #0daca7;
+  font-family: Arial;
+}
+
+.nuber{
+    margin: auto;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+.nuber img{
+  width: 100%;
+  height: 100%;
+
+}
+.topbanner{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.topbanner img{
+  width: 100%;
+}
+
+#btn{
+  text-align: center;
+  margin-top: 50px;
+  display: none;
+}
+
+
+#before{
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+#before:active > img{
+  width: 50px;
+}
+#before:active::after{
+  width: 100%;
+}
+#before img{
+  width: 100%;
+}
+
+.stbb{
+  text-align: center;
+  margin-top: 30px;
+}
+#start{
+  margin-top: 0px;
+  width: 220px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: white;
+  color: #0daca7;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 10px;
+  outline: none;
+}
+
+#restart{
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  color: #0daca7;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 10px;
+  outline: none;
+}
+#next{
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  color: #0daca7;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 10px;
+  outline: none;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+footer img{
+  width: 100%;
+}
